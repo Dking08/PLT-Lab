@@ -13,8 +13,8 @@ int main(){
 	for (int i=0;i<n;i++ ){
 	FDup=0;
 		for(int j=i+1;j<n;j++){
-			for(int k=0;k<=i;k++){
-				if(ar1[j]==ar2[k]){
+			for(int k=0;k<=Din;k++){
+				if(ar1[i]==ar2[k]){
 					FDup=1;
 				}
 			}
