@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main(){
+	printf("Enter the length of the array: ");
+	int n;
+	scanf("%d",&n);
+	int ar1[n];
+	for(int i=0;i<n;i++){
+		printf("Enter %dth number: ",i+1);
+		scanf("%d",&ar1[i]);
+	}
+	printf("Finding uniques:\n");
+	int FF=0;
+	for (int i=0;i<n;i++ ){
+	FF=0;
+		for(int j=0;j<n;j++){
+			if(ar1[i]==ar1[j] && i!=j){
+				FF++;
+				break;
+			}
+		}
+	if(FF==0){printf("%d ",ar1[i]);}
+	}
+	//printf("Number of duplicates: %d",dup/2);
+return 0;
+}
